@@ -19,6 +19,7 @@ a {
 h2 {
   font-weight: 400;
   font-size: 1.5rem;
+  margin-top: 5rem;
 }
 
 h2,
@@ -46,7 +47,8 @@ ol li ol li {
 
 .container {
   width: 65%;
-  margin: 6rem auto 3rem;
+  margin: 0 auto 3rem;
+  padding-top: 2rem;
 }
 
 header {
