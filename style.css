@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #3c4043;
+  font-size: 14px;
+  padding-top: 105px;
+}
+
+a {
+  text-decoration: none;
+  color: #3367d6;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h2,
+p {
+  margin-bottom: 1.4rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 1.5rem;
+}
+
+ol.alpha li {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+ol li ol li {
+  margin-left: 2rem;
+}
+
+.container {
+  width: 65%;
+  margin: 6rem auto 3rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  grid-template-rows: 6fr 4fr;
+  padding: 0 1.4rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid #5f636857;
+}
+
+header a {
+  color: #5f6368;
+}
+
+header h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 10px 0;
+  border-bottom: 3px solid transparent;
+  font-size: 15px;
+}
+
+header ul li a.active {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
+  padding: 10px 0;
+}
+
+header ul li:not(:first-child) {
+  padding-left: 28px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 90px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+header .login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .login img {
+  width: 36px;
+  margin-left: 1.5rem;
+}
