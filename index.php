@@ -75,8 +75,8 @@
         <h3><a href="https://policies.google.com/?authuser=0">Privacy e termini</a></h3>
     </div>
     <div class="login">
-    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-    <a href="#"><img src="./img/avatar2.png" alt="User"></a>
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        <a href="#"><img src="./img/avatar2.png" alt="User"></a>
     </div>
 <nav>
     <ul>
@@ -94,11 +94,8 @@
 <div class="container">
     <?php foreach ( $faqs as $faq ) {
     ?>
-    
     <h2><?php echo $faq["question"] ?></h2>
-    
     <?php echo $faq["answer"] ?>
-    
     <?php } ?>
 </div>
 
