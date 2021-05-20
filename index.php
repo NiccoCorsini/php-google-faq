@@ -44,26 +44,30 @@
     [
         "name" => "Introduzione",
         "link" => "https://policies.google.com/",
+        "uri" => "/"
     ],
     [
         "name" => "Norme sulla privacy",
         "link" => "https://policies.google.com/privacy",
+        "uri" => "/privacy"
     ],
     [
         "name" => "Termini di servizio",
         "link" => "https://policies.google.com/terms",
+        "uri" => "/terms"
     ],
     [
         "name" => "Tecnologie",
         "link" => "https://policies.google.com/technologies",
+        "uri" => "/technologies"
     ],
     [
         "name" => "Domande frequenti",
         "link" => "./index.php",
+        "uri" => "/php-google-faq/index.php"
     ]
 ];
     ?>
-
 
 <header>
     <div class="logo">
@@ -78,7 +82,7 @@
     <ul>
         <?php foreach ($nav as $link) { ?>
         <li ><a <?php 
-            if ($link["name"] == "Domande frequenti") {
+            if ($link["uri"] == $_SERVER['REQUEST_URI']) {
                 echo "class='active'";
             }
             ?> href="<?php echo $link["link"] ?>"><?php echo $link["name"] ?></a></li>
@@ -86,7 +90,6 @@
      </ul>
 </nav>
 </header>
-
 
 <div class="container">
     <?php foreach ( $faqs as $faq ) {
@@ -98,8 +101,6 @@
     
     <?php } ?>
 </div>
-
-
 
 </body>
 </html>
